@@ -3,7 +3,7 @@ Feature: Test flow login at "kasirAja" website
   Background:
     Given the user is on the "kasirAja" login page
 
-  Scenario Outline: Unsuccessful login with invalid or empty credentials
+  Scenario Outline: Unsuccessful login with invalid credentials
     When the user enters the email "<email>" and password "<password>"
     And the user clicks the login button
     Then an error message "<error_message>" should be displayed

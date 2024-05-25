@@ -24,6 +24,6 @@ Then('the user should be redirected to the dashboard page', async () => {
 // failed login
 Then('an error message {string} should be displayed', async function (error_message) {
     await loginPage.errorMsg.waitForDisplayed({ timeout: 5000 });
-    await expect(loginPage.errorMsg).toBeDisplayed();
+    await expect(loginPage.errorMsg).toExist();
     await expect(loginPage.errorMsg).toHaveTextContaining(error_message);
 });

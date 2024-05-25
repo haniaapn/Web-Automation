@@ -22,7 +22,7 @@ class LoginPage extends Page{
     }
 
     get errorMsg(){
-        return $('#root > div > div > div > div.css-1w7v3tn > div > div.chakra-alert.css-qwanz3');
+        return $("//div[@role='alert']");
     }
     
     open() {
