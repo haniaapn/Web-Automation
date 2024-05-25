@@ -4,9 +4,10 @@
   "description": "web automation using pom, cucumber, and wdio",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./wdio.conf.js",
+    "test": "wdio && node generate-report.js && npm run open-report",
     "wdio": "wdio run ./wdio.conf.js",
-    "generate-report": "cucumber-html-reporter -i /Users/haniapn/Documents/sanber/web-automation/cucumber-report"
+    "generate-report": "node generate-report.js",
+    "open-report": "open ./cucumber-report/index.html"
   },
   "author": "",
   "license": "ISC",

@@ -1,7 +1,5 @@
 import Page from 'pageobjects/page.page';
 
-//const Page = require('./page.js')
-
 class DashboardPage extends Page{
     get dashboardPageElement(){
         return $('//h3[contains(text(),"kasirAja")]')
