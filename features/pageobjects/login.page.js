@@ -1,7 +1,5 @@
 import Page from '/Users/haniapn/Documents/sanber/web-automation/features/pageobjects/page.js';
 
-//const Page = require('./page.js')
-
 class LoginPage extends Page{
 
     open() {
@@ -23,10 +21,6 @@ class LoginPage extends Page{
 
     get errorMsg(){
         return $("//div[@role='alert']");
-    }
-    
-    open() {
-        super.open('https://kasirdemo.belajarqa.com')
     }
 
 }

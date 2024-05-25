@@ -1,4 +1,4 @@
-import Page from 'pageobjects/page.page';
+import Page from '/Users/haniapn/Documents/sanber/web-automation/features/pageobjects/page.js';
 
 class DashboardPage extends Page{
     get dashboardPageElement(){
@@ -34,14 +34,12 @@ class DashboardPage extends Page{
     }
 
     get message(){
-        return $('//*[@id="toast-4-title"]')
+        return $('[id="chakra-toast-manager-top-right"')
     }
 
     get errorMsg(){
-        return $("//div[@role='alert']")
+        return $("//div[@role='alert']");
     }
-
-
 }
 
 module.exports = new DashboardPage();
